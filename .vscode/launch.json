@@ -1,0 +1,59 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "Caso3-Infracomp_1952371a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Cliente",
+            "request": "launch",
+            "mainClass": "Client.Monothread.Cliente",
+            "projectName": "Caso3-Infracomp_1952371a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Servidor",
+            "request": "launch",
+            "mainClass": "Server.Monothread.Servidor",
+            "projectName": "Caso3-Infracomp_1952371a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Server",
+            "request": "launch",
+            "mainClass": "Server.Multithread.Server",
+            "projectName": "Caso3-Infracomp_1952371a"
+        },
+        {
+            "type": "java",
+            "name": "Launch ClientCreator",
+            "request": "launch",
+            "mainClass": "Client.Multithread.ClientCreator",
+            "projectName": "Caso3-Infracomp_1952371a"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Caso Monothread",
+            "configurations": ["Launch Servidor", "Launch Cliente"]
+        },
+        {
+            "name": "Caso Multithread",
+            "configurations": ["Launch Server", "Launch ClientCreator"]
+        }
+    ]
+}
